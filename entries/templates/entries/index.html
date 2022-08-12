@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/>
+</head>
+<body>
+    <section id="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Dear Diary
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <article class="media">
+                <div class="media-content">
+                    <div class="content">
+                        <a href="/add">Add new entry</a>
+                    </div>
+                </div>
+            </article>
+
+            {% for entry in entries%}
+
+            <article class="media">
+                <div class="media-content">
+                    <div class="content">
+                        <p>
+                            <strong>
+                                {{ entry.date_posted }}
+                            </strong>
+                            <br>
+                            {{ entry.article }}
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            {% endfor %}
+
+            <!--<article class="media">
+                <div class="media-content">
+                    <div class="content">
+                        <p>
+                            <strong>
+                                January 28, 1985 6:45 PM
+                            </strong>
+                            <br>
+                            gfggskkfghjsklwhgcsbgshgasfsfhgadjkfkldjfklhdjgdfmvfd
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="media">
+                <div class="media-content">
+                    <div class="content">
+                        <p>
+                            <strong>
+                                January 31, 1987 6:45 PM
+                            </strong>
+                            <br>
+                            gfggskkfghjsklwhgcsbgshgasfsfhgadjkfkldjfklhdjgdfmvfd
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="media">
+                <div class="media-content">
+                    <div class="content">
+                        <p>
+                            <strong>
+                                February 27, 1985 6:45 PM
+                            </strong>
+                            <br>
+                            gfggskkfghjsklwhgcsbgshgasfsfhgadjkfkldjfklhdjgdfmvfd
+                        </p>
+                    </div>
+                </div>
+            </article>-->
+        </div>
+    </section>
+
+    <footer class="footer">
+
+    </footer>
+</body>
+</html>

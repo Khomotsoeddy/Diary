@@ -1,0 +1,11 @@
+{
+    "emmet.includeLanguages": {
+        "javascript":"javascriptreact"
+    },
+    "emmet.preferences": {},
+    "editor.linkedEditing": true,
+    "html.format.contentUnformatted": "",
+    "files.associations": {"*html":"html"},
+    "emmet.triggerExpansionOnTab": false,
+    "emmet.syntaxProfiles": {}
+}
